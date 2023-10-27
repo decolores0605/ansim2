@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/common.js"></script>
+    <title>Search</title>
+</head>
+<body>
+    <div id="sub-page-do_what">
+        <div class="seoul-gnb">
+            <a href="#" class="logo"><img src="../images/logo(edit).png" alt="서울특별시"></a>
+            <ul class="nav">
+                <li><a href="#">서울소식</a></li>
+                <li><a href="#">응답소</a></li>
+                <li><a href="#">정보공개</a></li>
+                <li><a href="#">분야별정보</a></li>
+            </ul>
+        </div>
+        <div id="header">
+            <header class="sub-page">
+                <span class="top-bg"></span>
+                <div class="top-wrap">
+                    <a href="../main-page/index.html" class="top-logo">청년안심주택</a>
+                    <div class="menu-wrap"> 
+                        <ul class="menu">
+                            <li><a href="../sub-page/do-what.html">청년안심주택?</a></li>
+                            <li><a href="../sub-page/search.html">청년주택 찾기</a></li>
+                            <li><a href="../sub-page/banking-support.html">금융지원</a></li>
+                            <li><a href="../sub-page/community.html">커뮤니티</a></li>
+                            <li><a href="../sub-page/customer-service.html">고객센터</a></li>
+                        </ul>
+                        <ul class="sub-menu">
+                            <li class="do-what-sub">
+                                <ul>
+                                    <li><a href="#">사업소개</a></li>
+                                    <li><a href="#">센터소개</a></li>
+                                    <li><a href="#">공급현황 및 계획</a></li>
+                                    <li><a href="#">입주자자격안내</a></li>
+                                </ul>
+                            </li>
+                            <li class="search-sub">
+                                <ul>
+                                    <li><a href="#">청년주택 찾기</a></li>
+                                    <li><a href="#">모집공고</a></li>
+                                    <li><a href="#">입주자신청절차</a></li>
+                                </ul>
+                            </li>
+                            <li class="banking-support-sub">
+                               <ul>
+                                <li><a href="#">금융지원 안내</a></li>
+                                <li><a href="#">청년안심주택 임대보증금 지원</a></li>
+                                <li><a href="#">신혼부부 임차보증금 이자자원</a></li>
+                                <li><a href="#">청년 임차보증금 이자지원</a></li>
+                                <li><a href="#">청년월세지원 사업</a></li>
+                               </ul>
+                            </li>
+                            <li class="community-sub">
+                                <ul>
+                                    <li><a href="#">단지별 공지사항</a></li>
+                                    <li><a href="#">공간예약</a></li>
+                                    <li><a href="#">커뮤니티 프로그램</a></li>
+                                </ul>
+                            </li>
+                            <li class="customer-service-sub">
+                                <ul>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">자료실</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="main-gnb">
+                        <a href="../sub-page/login.html" class="login">로그인</a>
+                        <button class="gnb-btn">
+                            <span>메뉴</span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div id="content-container2">
+            <div class="map-wrap">
+                <div class="map">
+                    <ul>
+                        <li class="home"><a href="#" class="btn">home-btn</a></li>
+                        <li class="menu num1">
+                            <input type="radio" name="tab" id="ch1" class="ch">
+                            <div class="sub-menu title"><label for="ch1">청년주택 찾기</label></div>
+                            <ul class="sub-menu drop">
+                                <li><a href="../sub-page/do-what.html">청년안심주택?</a></li>
+                                <li><a href="../sub-page/search.html">청년주택 찾기</a></li>
+                                <li><a href="../sub-page/banking-support.html">금융지원</a></li>
+                                <li><a href="../sub-page/community.html">커뮤니티</a></li>
+                                <li><a href="../sub-page/customer-service.html">고객센터</a></li>
+                                <li><a href="../sub-page/login.html">회원</a></li>
+                                <li><a href="#">마이페이지</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu num2">
+                            <input type="radio" name="tab" id="ch2" class="ch">
+                            <div class="sub-menu title"><label for="ch2">사업소개</label></div>
+                            <ul class="sub-menu drop">
+                                <li><a href="#">사업소개</a></li>
+                                <li><a href="#">센터소개</a></li>
+                                <li><a href="#">공급현황 및 계획</a></li>
+                                <li><a href="#">입주자격안내</a></li>
+                            </ul>
+                        </li>
+                        <li class="quick-btn print"><a href="#" class="">print</a></li>
+                        <li class="quick-btn share"><a href="#" class="">share</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="search-page section">
+                <div class="notice search">
+                    <div class="menu-group">
+                        <input type="radio" name="tab" id="recruit" checked>
+                        <input type="radio" name="tab" id="notify">
+                        <div class="menu-txt">
+                            <label for="recruit">스마트 검색</label>
+                            <label for="notify">지도 검색</label>
+                        </div>
+                        <div class="content-wrap">
+                            <div class="map search">
+                                <div class="map">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3231.8302456250935!2d128.84652307623185!3d35.90217301780483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35666da5cdc63007%3A0x22512884b2f92343!2z64yA6rWs64yA7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1698324577611!5m2!1sko!2skr" width="1200px" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                                <div class="sort">
+                                    <div class="subway"></div>
+                                    <div class="area"></div>
+                                    <div class="empty-or"></div>
+                                </div>
+                            </div>
+                            <div class="smart search">
+                                <div class="map">
+                                    <img src="../images/sub-page/search-page/map_0.jpg" alt="">
+                                </div>
+                                <div class="sort">
+                                    <button class="clear">초기화</button>
+                                    <div class="subway box">
+                                        <p class="title">지하철역</p>
+                                        <div class="btn-group">
+                                            <button class="on">전체</button>
+                                            <button>1호선</button>
+                                            <button>2호선</button>
+                                            <button>3호선</button>
+                                            <button>4호선</button>
+                                            <button>5호선</button>
+                                            <button>6호선</button>
+                                            <button>7호선</button>
+                                            <button>8호선</button>
+                                            <button>9호선</button>
+                                            <button>수인분당선</button>
+                                            <button>신분당선</button>
+                                            <button>경의중앙선</button>
+                                            <button>공항철도</button>
+                                            <button>경춘선</button>
+                                            <button>의정부경전철</button>
+                                            <button>우이신설경전철</button>
+                                            <button>김포도시철도</button>
+                                        </div>
+                                    </div>
+                                    <div class="area box">
+                                        <p class="title">지역구</p>
+                                        <div class="btn-group">
+                                            <button class="on">전체</button>
+                                            <button>강남구</button>
+                                            <button>강동구</button>
+                                            <button>강북구</button>
+                                            <button>강서구</button>
+                                            <button>관악구</button>
+                                            <button>광진구</button>
+                                            <button>구로구</button>
+                                            <button>금천구</button>
+                                            <button>노원구</button>
+                                            <button>도봉구</button>
+                                            <button>동대문구</button>
+                                            <button>동작구</button>
+                                            <button>마포구</button>
+                                            <button>서대문구</button>
+                                            <button>서초구</button>
+                                            <button>성동구</button>
+                                            <button>성북구</button>
+                                            <button>송파구</button>
+                                            <button>양천구</button>
+                                            <button>영등포구</button>
+                                            <button>용산구</button>
+                                            <button>은평구</button>
+                                            <button>종로구</button>
+                                            <button>중구</button>
+                                            <button>중랑구</button>
+                                        </div>
+                                    </div>
+                                    <div class="empty-or box">
+                                        <p class="title">공실로 찾기</p>
+                                        <div class="btn-group">
+                                            <button class="on">전체</button>
+                                            <button>입주가능</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-wrap">
+                                <button>검색</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" class="board-sch" placeholder="주택명을 입력해주세요.">
+                        <a href="#" class="sch btn">검색버튼</a>
+                    </div>
+                </div>
+                <div class="board container">
+                    <div class="list-info">
+                       <div class="page-info">
+                            <p class="page total">전체 <strong>46</strong> 건</p>
+                            <p class="page current">페이지 <strong> <span>1</span>/5</strong></p>
+                       </div>
+                       <select name="search-box" id="search-box" class="num-container">
+                           <option class="page-number" value="10">10</option>
+                           <option class="page-number" value="20">20</option>
+                           <option class="page-number" value="30">30</option>
+                       </select>
+                    </div>
+                    <div class="table-wrap">
+                        <table class="board search-page">
+                            <thead>
+                                <tr>
+                                    <th class="number">번호</td>
+                                    <th class="pic">사진</td>
+                                    <th class="area">지역구</td>
+                                    <th class="title ">제목</td>
+                                    <th class="subway">전철역</td>
+                                    <th class="empty-or">공실여부</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="number">1</td>
+                                    <td class="pic"><img src="../images/sub-page/search-page-list/apartment01.jpg" alt=""></td>
+                                    <td class="area">용산구</td>
+                                    <td class="title">삼각지역 용산 베르디움 프렌즈</td>
+                                    <td class="subway">4호선,6호선</td>
+                                    <td class="empty-or">공실없음</td>
+                                </tr>
+                                <tr>
+                                    <td class="number">2</td>
+                                    <td class="pic"><img src="../images/sub-page/search-page-list/apartment02.jpg" alt=""></td>
+                                    <td class="area">강서구</td>
+                                    <td class="title">발산역 엘크루</td>
+                                    <td class="subway">5호선</td>
+                                    <td class="empty-or">공실없음</td>
+                                </tr>
+                                <tr>
+                                    <td class="number">3</td>
+                                    <td class="pic"><img src="../images/sub-page/search-page-list/apartment03.jpg" alt=""></td>
+                                    <td class="area">노원구</td>
+                                    <td class="title">태릉입구역 와이엔타워</td>
+                                    <td class="subway">6호선,7호선</td>
+                                    <td class="empty-or">공실없음</td>
+                                </tr>
+                                <tr>
+                                    <td class="number">4</td>
+                                    <td class="pic"><img src="../images/sub-page/search-page-list/apartment04.PNG" alt=""></td>
+                                    <td class="area">영등포구</td>
+                                    <td class="title">신도림역 도림브라보</td>
+                                    <td class="subway">1호선,2호선</td>
+                                    <td class="empty-or">공실없음</td>
+                                </tr>
+                                <tr>
+                                    <td class="number">5</td>
+                                    <td class="pic"><img src="../images/sub-page/search-page-list/apartment05.jpg" alt=""></td>
+                                    <td class="area">중랑구</td>
+                                    <td class="title">먹골역 칼튼테라스</td>
+                                    <td class="subway">7호선</td>
+                                    <td class="empty-or">공실없음</td>
+                                </tr>
+                                <tr>
+                                    <td class="number">6</td>
+                                    <td class="pic"><img src="../images/sub-page/search-page-list/apartment06.jpg" alt=""></td>
+                                    <td class="area">강동구</td>
+                                    <td class="title">천호역 한강리슈빌</td>
+                                    <td class="subway">5호선,8호선</td>
+                                    <td class="empty-or">공실없음</td>
+                                </tr>
+                                <tr>
+                                    <td class="number">7</td>
+                                    <td class="pic"><img src="../images/sub-page/search-page-list/apartment07.jpg" alt=""></td>
+                                    <td class="area">마포구</td>
+                                    <td class="title">상수역 홍대 크리원</td>
+                                    <td class="subway">6호선</td>
+                                    <td class="empty-or">공실없음</td>
+                                </tr>
+                                <tr>
+                                    <td class="number">8</td>
+                                    <td class="pic"><img src="../images/sub-page/search-page-list/apartment08.jpg" alt=""></td>
+                                    <td class="area">서초구</td>
+                                    <td class="title">서초역 서초꽃마을</td>
+                                    <td class="subway">2호선</td>
+                                    <td class="empty-or">공실없음</td>
+                                </tr>
+                                <tr>
+                                    <td class="number">9</td>
+                                    <td class="pic"><img src="../images/sub-page/search-page-list/apartment09.jpg" alt=""></td>
+                                    <td class="area">마포구</td>
+                                    <td class="title">광흥창역 이랜드신촌청년주택</td>
+                                    <td class="subway">6호선</td>
+                                    <td class="empty-or">공실없음</td>
+                                </tr>
+                                <tr>
+                                    <td class="number">10</td>
+                                    <td class="pic"><img src="../images/sub-page/search-page-list/apartment10.png" alt=""></td>
+                                    <td class="area">강성구</td>
+                                    <td class="title">동촌역 센터스퀘어동촌</td>
+                                    <td class="subway">9호선</td>
+                                    <td class="empty-or">공실없음</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="btn-group">
+                        <div class="page-group">
+                            <div  class="page on">
+                                <a href="#">1</a>
+                            </div>
+                            <div class="page ">
+                                <a href="#">2</a>
+                            </div>
+                            <div class="page ">
+                                <a href="#">3</a>
+                            </div>
+                            <div class="page ">
+                                <a href="#">4</a>
+                            </div>
+                            <div class="page ">
+                                <a href="#">5</a>
+                            </div>
+                        </div>
+                        <div class="arrow next-page">
+                            <a href="#">arrow</a>
+                        </div>
+                        <div  class="arrow next-field">
+                            <a href="#">double arrow</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="top-wrap">
+                <div class="link">
+                    <ul>
+                        <li><a href="#" class="have-icon">공동체주택플랫폼</a></li>
+                        <li><a href="#" class="have-icon have-line">사회주택플랫폼</a></li>
+                        <li><a href="#" class="have-line">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+                <div class="sns">
+                    <a href="#"><img src="../images/footer_top/ico_facebook.png" alt="facebook"></a>
+                    <a href="#"><img src="../images/footer_top/ico_instagram.png" alt="instagram"></a>
+                    <a href="#"><img src="../images/footer_top/ico_blog.png" alt="blog"></a>
+                    <div class="site-map-wrap">
+                        <button class="site-map">관련사이트</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-wrap">
+                <div class="mark-group">
+                    <a href="#" class="logo-seoul"><img src="../images/footer_bottom/footer_logo_seoul.png" alt="서울특별시"></a>
+                    <a href="#" class="wa"><img src="../images/footer_bottom/wa_mark.png" alt="웹접근성"></a>
+                </div>
+                <div class="txt-group">
+                    <p>[04514] 서울특별시 중구 서소문로 124, 씨티스퀘어 6층 전략주택공급과</p>
+                    <p>[04375] 서울시 용산구 백범로99길 40, 용산베르디움프렌즈 102동 2층</p>
+                    <p class="copy-right">© Seoul Metropolitan Government All rights reserved.</p>
+                </div>
+                <div class="banner">
+                    <a href="#"><img src="../images/footer_bottom/fdc83d493bce1015a0dc6d0943c671ff.png" alt="서울런4050_경력설계트립"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
